@@ -1,26 +1,25 @@
 
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    width: 30%;
-    align-self: center;
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 30%;
+  align-self: center;
 }
 
-.right-column{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.left-column{
-    display: flex;
-    flex-direction: column;
+.left-column {
+  display: flex;
+  flex-direction: column;
 }
 
-.record-score{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.record-score {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
