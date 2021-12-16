@@ -1,4 +1,5 @@
 import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { displayScores, recordScore } from './game';
 
 displayScores();
@@ -12,6 +13,8 @@ const submitScore = () => {
     score: score.value,
   };
   recordScore(JSON.stringify(data));
+  name.value = '';
+  score.value = '';
 };
 
 const submitButton = document.getElementById('submitButton');
