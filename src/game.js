@@ -23,7 +23,7 @@ const getScores = async () => {
   return scores;
 };
 
-const recordScore = async (data) => {
+export const recordScore = async (data) => {
   const response = await fetch(url, {
     method: "POST",
     body: data,
@@ -32,4 +32,5 @@ const recordScore = async (data) => {
       "Content-Type": "application/json",
     },
   });
+  //displayScores();
 };
