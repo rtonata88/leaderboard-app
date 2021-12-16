@@ -1,21 +1,21 @@
-import "./style.css";
-import { displayScores, recordScore } from "./game";
+import './style.css';
+import { displayScores, recordScore } from './game';
 
 displayScores();
 
 const submitScore = () => {
-  let name = document.getElementById("name");
-  let score = document.getElementById("score");
+  const name = document.getElementById('name');
+  const score = document.getElementById('score');
 
-  let data = {
+  const data = {
     user: name.value,
     score: score.value,
   };
   recordScore(JSON.stringify(data));
 };
 
-let submitButton = document.getElementById("submitButton");
-submitButton.addEventListener("click", submitScore);
+const submitButton = document.getElementById('submitButton');
+submitButton.addEventListener('click', submitScore);
 
-let refreshButton = document.getElementById("refreshButton");
-refreshButton.addEventListener("click", displayScores);
+const refreshButton = document.getElementById('refreshButton');
+refreshButton.addEventListener('click', displayScores);

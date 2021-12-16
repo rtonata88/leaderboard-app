@@ -1,12 +1,18 @@
-import { url } from "./api";
+import url from './api';
+
+const getScores = async () => {
+  const response = await fetch(url()); // get the scores
+  const scores = await response.json();
+  return scores;
+};
 
 export const displayScores = () => {
   const scores = getScores();
-  let table = document.getElementById("table-scores");
+  const table = document.getElementById('table-scores');
   scores.then((score) => {
-    let results = score.result;
+    const results = score.result;
 
-    let tableScoreRow = "";
+    let tableScoreRow = '';
     results.forEach((result) => {
       tableScoreRow += `<tr>
                             <td>${result.user}</td>
@@ -17,20 +23,14 @@ export const displayScores = () => {
   });
 };
 
-const getScores = async () => {
-  const response = await fetch(url); // get the scores
-  const scores = await response.json();
-  return scores;
-};
-
 export const recordScore = async (data) => {
-  const response = await fetch(url, {
-    method: "POST",
+  await fetch(url(), {
+    method: 'POST',
     body: data,
     headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
     },
   });
-  //displayScores();
+  // displayScores();
 };
