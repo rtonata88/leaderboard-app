@@ -1,25 +1,7 @@
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  width: 30%;
-  align-self: center;
+body{
+  background-color: #f8f9fa !important;
 }
 
-.right-column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.left-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.record-score {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.bg-purple{
+  background-color: #6f42c1;
 }

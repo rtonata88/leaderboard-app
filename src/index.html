@@ -6,25 +6,85 @@
     <title>Leaderboard</title>
   </head>
   <body>
-    <main>
-      <h1>Leaderboard</h1>
-      <section class="container">
-        <section class="right-column">
-             <strong>Recent scores</strong>
-             <button type="button" id="refreshButton">Refresh</button>
-          <table id="table-scores">
-           
-          </table>
+    <main class="container">
+      <div class="row col-sm-12 col-md-8 m-auto">
+        <section
+          class="
+            d-flex
+            align-items-center
+            p-3
+            my-3
+            text-white-50
+            bg-purple
+            rounded
+            box-shadow
+          "
+        >
+          <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">Leaderboard</h6>
+            <small>Where winners live</small>
+          </div>
         </section>
-        <section class="left-column">
-          <section class="record-score">
-            <strong>Add your score</strong>
-            <input type="text" name="name" id="name" placeholder="Your name" />
-            <input type="number" name="score" id="score" placeholder="Your score" />
-            <button type="button" id="submitButton">Submit</button>
+        <div class="row col-sm-12 col-md-8">
+          <section class="my-3 p-3 bg-white rounded box-shadow">
+            <div class="border-bottom border-gray pb-2 mb-0">
+              <div class="col-md-10">
+                <h6 class="strong">Recent scores</h6>
+              </div>
+              <div class="col-md-2 pull-right">
+                <button
+                  type="button"
+                  id="refreshButton"
+                  class="btn btn-outline-secondary btn-sm"
+                >
+                  Refresh
+                </button>
+              </div>
+            </div>
+
+            <div class="media text-muted pt-3">
+              <table
+                id="table-scores"
+                class="table table-sm table-striped table-hover"
+              ></table>
+            </div>
           </section>
-        </section>
-      </section>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <section class="my-3 p-3 bg-white rounded box-shadow">
+            <h6 class="border-bottom border-gray pb-3 mb-0 strong">
+              Add your score
+            </h6>
+            <div class="media text-muted pt-3">
+              <div class="form-group mb-2">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="form-group mb-2">
+                <input
+                  type="number"
+                  name="score"
+                  id="score"
+                  class="form-control"
+                  placeholder="Your score"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-success btn-sm"
+                id="submitButton"
+              >
+                Submit
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
     </main>
   </body>
 </html>
