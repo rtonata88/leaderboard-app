@@ -11,33 +11,17 @@
       <section class="container">
         <section class="right-column">
              <strong>Recent scores</strong>
-             <button type="button">Refresh</button>
-          <table>
-            <tr>
-              <td>Name: 100</td>
-            </tr>
-            <tr>
-              <td>Name: 200</td>
-            </tr>
-            <tr>
-              <td>Name: 300</td>
-            </tr>
-            <tr>
-              <td>Name: 400</td>
-            </tr>
+             <button type="button" id="refreshButton">Refresh</button>
+          <table id="table-scores">
+           
           </table>
         </section>
         <section class="left-column">
           <section class="record-score">
             <strong>Add your score</strong>
-            <input type="tel" name="name" id="name" placeholder="Your name" />
-            <input
-              type="tel"
-              name="score"
-              id="score"
-              placeholder="Your score"
-            />
-            <button type="button">Submit</button>
+            <input type="text" name="name" id="name" placeholder="Your name" />
+            <input type="number" name="score" id="score" placeholder="Your score" />
+            <button type="button" id="submitButton">Submit</button>
           </section>
         </section>
       </section>
